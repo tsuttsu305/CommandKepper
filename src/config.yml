@@ -1,0 +1,15 @@
+KickMessage: "You are try used kick command"
+BroadCastMessage: "%Player% is use kick command!"
+BroadCastStaffMessage: "%Player$ is used kick command[%Command%]"
+KickCommand:
+ - op
+ - stop
+ - give
+ - i
+ - kick
+ - ban
+ - deop
+ - unban
+ - gban
+ - lban
+ - hk

@@ -25,9 +25,9 @@ public class getCommand implements Listener {
             for(int i = 0 ; i < cmdKepper.kickCmd.size() ; i++){
                     if(cmdKepper.kickCmd.get(i).equalsIgnoreCase(getCmd)){
                         Player[] onlinePlayers = cmdKepper.getServer().getOnlinePlayers();
-                        for(int i = 0 ; i < onlinePlayers.length ; i++){
-                            if(onlinePlayers[i].hasPermission("commandkepper.staff") || onlinePlayers[i].isOp()){
-                                onlinePlayers[i].sendMessage("[CommandKepper]" + cmdKepper.noticeStaffMsg.replaceAll("%Player%", ChatColor.GREEN + senderPlayer.getName() + ChatColor.WHITE).replaceAll("%Command%", ChatColor.GRAY + getCmd + ChatColor.WHITE));
+                        for(int ii = 0 ; ii < onlinePlayers.length ; ii++){
+                            if(onlinePlayers[ii].hasPermission("commandkepper.staff") || onlinePlayers[i].isOp()){
+                                onlinePlayers[ii].sendMessage("[CommandKepper]" + cmdKepper.noticeStaffMsg.replaceAll("%Player%", ChatColor.GREEN + senderPlayer.getName() + ChatColor.WHITE).replaceAll("%Command%", ChatColor.GRAY + getCmd + ChatColor.WHITE));
                             }
                         }
                         cmdKepper.getServer().broadcastMessage("[CommandKepper]" + cmdKepper.noticeStaffMsg.replaceAll("%Player%", ChatColor.GREEN + senderPlayer.getName() + ChatColor.WHITE).replaceAll("%Command%", ChatColor.GRAY + getCmd + ChatColor.WHITE));
