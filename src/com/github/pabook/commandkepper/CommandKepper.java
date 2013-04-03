@@ -21,6 +21,7 @@ public class CommandKepper extends JavaPlugin {
         kickMsg = getConfig().getString("KickMessage");
         noticeMsg = getConfig().getString("BroadCastMessage");
         noticeStaffMsg = getConfig().getString("BroadCastStaffMessage");
+
     }
 
 }
