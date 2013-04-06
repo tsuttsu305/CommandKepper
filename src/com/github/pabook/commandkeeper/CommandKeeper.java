@@ -1,11 +1,11 @@
-package com.github.pabook.commandkepper;
+package com.github.pabook.commandkeeper;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.List;
 import java.util.logging.Logger;
 
-public class CommandKepper extends JavaPlugin {
+public class CommandKeeper extends JavaPlugin {
 
     public String kickMsg, noticeMsg, noticeStaffMsg;
     public List<String> kickCmd;
@@ -21,7 +21,5 @@ public class CommandKepper extends JavaPlugin {
         kickMsg = getConfig().getString("KickMessage");
         noticeMsg = getConfig().getString("BroadCastMessage");
         noticeStaffMsg = getConfig().getString("BroadCastStaffMessage");
-
     }
-
 }
