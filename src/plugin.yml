@@ -1,3 +1,3 @@
-name: CommandKepper
+name: CommandKeeper
 version: Relase2 #002
-main: com.github.pabook.commandkepper.CommandKepper
+main: com.github.pabook.commandkeeper.CommandKeeper
